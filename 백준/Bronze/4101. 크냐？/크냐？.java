@@ -1,22 +1,16 @@
 import java.util.Scanner;
 
- class Main {
-     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
-         int A,B;
-         while (true) {
-             A = sc.nextInt();
-             B = sc.nextInt();
-             if(A==0 && B==0){
-                 break;
-             }
-             if (A > B) {
-                 System.out.println("Yes");
-             } else {
-                 System.out.println("No");
-             }
-         }
-     }
-     }
-
-
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while(true) {
+            int a ;
+            int b ;
+            a = sc.nextInt();
+            b = sc.nextInt();
+            if (a == 0 && b == 0) break;
+            if (a > b) System.out.println("Yes");
+            else System.out.println("No");
+        }
+        }
+    }
