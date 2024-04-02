@@ -1,30 +1,16 @@
-
-
-
-
-
 import java.util.Scanner;
 
- class Main {
-     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
-        int K1 = sc.nextInt();
-        int K2 = sc.nextInt();
-        int K3 = sc.nextInt();
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         int A = sc.nextInt();
+         int B = sc.nextInt();
+         int C = sc.nextInt();
+         if (A==60 && B==60 & C==60)  System.out.println("Equilateral");
+         else if (A+B+C == 180 && A==B || B==C || A==C)  System.out.println("Isosceles");
+         else if (A+B+C == 180)  System.out.println("Scalene");
+         else if (A+B+C !=180) System.out.println("Error");
+    }
+}
 
-        if(K1+K2+K3 != 180){
-            System.out.println("Error");
-        }
-        else if(K1 ==K2 && K1==K3 && K2== K3){
-            System.out.println("Equilateral"); 
-        }
-        else if(K1==K2 || K1 ==K3 || K2 == K3){
-            System.out.println("Isosceles");
-        }
-        else if(K1 != K2 || K1 !=K3 || K2 != K3){
-            System.out.println("Scalene");
-        }
-       
-     }
- }
 
